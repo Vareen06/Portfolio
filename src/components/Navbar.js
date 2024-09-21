@@ -50,7 +50,7 @@ const Navbar = ({ mode, toggleMode }) => {
                 } hover:${
                   mode ? "text-indigo-400" : "text-purple-400"
                 } hover:scale-105`}
-                onClick={() => navigate(text === 'Home' ? "/" : `/${text.toLowerCase().replace(' ', '')}`)}
+                onClick={() => navigate(text === 'Home' ? "/home" : `/${text.toLowerCase().replace(' ', '')}`)}
               >
                 {text}
               </button>

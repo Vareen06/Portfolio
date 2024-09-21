@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 // import Skills from './components/Skills';
@@ -23,7 +23,8 @@ const AppRouter = () => {
       <Navbar mode={mode} toggleMode={toggleMode}/>
       <Routes>
         {/* Default route */}
-        <Route path="/" element={<Home mode={mode} />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home mode={mode} />} />
         <Route path="/aboutme" element={<About mode={mode}/>} />
         <Route path="/projects" element={<Projects mode={mode} />} />
         {/* You can add more routes here for Skills, Projects, etc. */}
