@@ -18,13 +18,13 @@ const Footer = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-yellow-300 transition duration-300"
+            className="flex items-center hover:text-yellow-300 transition duration-300"
           >
             {icon}
-          </a>
           <p className="ml-2 hover:text-yellow-300 transition duration-300 text-sm md:text-base">
             {text}
           </p>
+          </a>
         </div>
       ))}
     </div>

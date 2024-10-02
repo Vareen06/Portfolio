@@ -19,25 +19,15 @@ const Navbar = ({ mode, toggleMode }) => {
       >
         <div className="container mx-auto flex items-center justify-between px-4 md:px-8">
           {/* Logo/Name */}
-          <div
-            className="flex items-center cursor-pointer"
-            onClick={() => navigate("/")}
-          >
-            <div className="w-4 h-4 bg-indigo-600 rounded-full mr-3"></div>
+          <div>
             <h1
               className={`font-bold text-lg tracking-wider ${
                 mode ? "text-white" : "text-black"
               }`}
+              onClick={() => navigate("/")}
             >
               Vareen Patel
             </h1>
-            <span
-              className={`text-sm ml-2 ${
-                mode ? "text-white" : "text-gray-500"
-              }`}
-            >
-              / STUDENT
-            </span>
           </div>
 
           {/* Desktop Links */}

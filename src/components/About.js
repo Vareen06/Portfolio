@@ -25,7 +25,7 @@ const techSkills = [
 const About = ({ mode }) => {
   return (
     <div className={`p-10 min-h-screen ${mode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'}`}>
-      <h1 className="text-4xl font-bold text-center text-blue-600 mb-10 mt-10">
+      <h1 className={`text-4xl font-bold text-center ${mode ? 'text-gray-200': 'text-gray-900'} mb-10 mt-10`}>
         About Me
       </h1>
 
