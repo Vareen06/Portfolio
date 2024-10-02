@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Each contact item wrapped in a flex container for better responsiveness */}
       {[
         { icon: <Email />, text: 'patelvareen23@gmail.com', href: 'mailto:patelvareen23@gmail.com' },
-        { icon: <Phone />, text: '+91-9825221775', href: 'tel:+91-9825221775' },
+        { icon: <Phone />, text: '+91-9825221775' },
         { icon: <LinkedIn />, text: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/patelvareen/' },
         { icon: <GitHub />, text: 'GitHub', href: 'https://github.com/Vareen06' },
         { icon: <InstagramIcon />, text: 'Instagram', href: 'https://www.instagram.com/vareen_06/' },
